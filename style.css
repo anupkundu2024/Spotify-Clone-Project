@@ -1,0 +1,367 @@
+/* sidebar style */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: white;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    background-color: black;
+    width: 350px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+
+.main-content {
+    background-color: #242526;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem
+}
+
+
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #242526;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 1rem;
+    line-height: 2.5;
+}
+
+.nav-option i {
+    font-size: 1rem;
+}
+
+.nav-option a {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.libary {
+    background-color: #242526;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    margin-top: 0.74rem;
+
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    width: 1.25rem;
+    height: 1.1rem;
+}
+
+.icon {
+    margin-left: 2.5rem;
+    font-size: 1.25rem;
+    opacity: 0.5;
+}
+
+.icon i {
+    opacity: 0.3;
+    margin: 0.3rem;
+}
+
+.icon i:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #7e8580;
+    height: 8rem;
+    border-radius: 10px;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 1.3rem 1.5rem;
+}
+
+.box-p1 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.box-p2 {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    line-height: 3;
+    font-weight: 400;
+}
+
+.badges {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+/* main contant */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.sticky-nav-img {
+    margin: 0.9rem;
+}
+
+.sticky-badges-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sticky-badges-user button {
+    margin: 1rem;
+}
+
+@media only screen and (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+/* cards style */
+.card {
+    background-color: #7e8580;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.7rem;
+
+}
+
+.card-cointainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-info {
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+/* music player style */
+.music-player {
+    border-radius: 30px;
+}
+
+.icon {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-left {
+    margin-right: 3rem;
+}
+
+.icon-middle {
+    margin-right: 3rem;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 70%;
+    height: 30%;
+    border-top: 2px solid white;
+    opacity: 0.2;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+    background-color: black;
+    height: 100%;
+}
+
+.player {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2px; */
+}
+
+.controls {
+    width: 25%;
+    background-color: black;
+    height: 100%;
+}
+
+/* .player-control-icons {
+    width: 1rem;
+    height: 1rem;
+    margin: 2rem;
+    opacity: 0.4;
+    margin-bottom: 16px;
+
+
+} */
+/* .player-control-icons {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.4;
+    margin-left: 3rem;
+    margin-right: 3rem;
+} */
+.player-control-icons {
+    height: 1rem;
+    margin-right: 1.7rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+
+/* .player-control-icons:hover {
+    opacity: 1;
+} */
+.player-control-icons:hover {
+    opacity: 1;
+}
+
+/* .playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.playback-bar {
+    position: absolute;
+    top: 2.5rem;
+    left: 14rem;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+/* .progress-bar{
+    appearance: none;
+} */
+.progress-bar {
+    width: 55%;
+    /* appearance: none; */
+    background: transparent;
+    cursor: pointer;
+}
+
+.album {
+    display: inline-flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.download {
+    width: 100px;
+    height: 70px;
+}
+
+.controls {
+    width: 25%;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    margin-top: 3em;
+
+}
+
+
+.controls i {
+    opacity: 0.5;
+}
+
+.controls i:hover {
+    opacity: 1;
+}
+
+.album-song {
+    line-height: 0.4rem;
+
+}
+
+.tum-hi-ho {
+    font-weight: 900;
+}
+
+.arijit-sing {
+    font-weight: 300;
+    font-size: small;
+}
